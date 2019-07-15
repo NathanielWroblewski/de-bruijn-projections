@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aperiodic Tessellations</title>
+    <link rel="stylesheet" type="text/css" href="/public/stylesheets/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" type="image/x-icon" href="/public/images/favicon.ico" />
+    <link rel="icon" type="image/png" href="/public/images/favicon-16x16.png" />
+    <link rel="icon" type="image/png" href="/public/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" href="/public/images/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" href="/public/images/android-chrome-512x512.png" />
+    <link rel="apple-touch-icon" href="/public/images/apple-touch-icon.png" />
+
+    <meta name="description" content="Constructing Penrose tiles with de Bruijn projections" />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" value="summary">
+    <meta name="twitter:title" content="Aperiodic Tessellations">
+    <meta name="twitter:description" content="Constructing Penrose tiles with de Bruijn projections">
+    <meta name="twitter:image" content="https://nathanielwroblewski.github.com/de-bruijn-projections/public/images/screenshot.png">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Aperiodic Tessellations" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://nathanielwroblewski.github.com/de-bruijn-projections" />
+    <meta property="og:image" content="https://nathanielwroblewski.github.com/de-bruijn-projections/public/images/screenshot.png" />
+    <meta property="og:description" content="Constructing Penrose tiles with de Bruijn projections" />
+    <meta property="og:site_name" content="www.nathaniel.ai" />
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Aperiodic Tessellations">
+    <meta itemprop="description" content="Constructing Penrose tiles with de Bruijn projections">
+    <meta itemprop="image" content="https://nathanielwroblewski.github.com/de-bruijn-projections/public/images/screenshot.png">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Aperiodic Tessellations</h1>
+      <p class="subtitle">Constructing Penrose tiles with de Bruijn projections</p>
+      <section>
+        <noscript>
+          <p class="text">This site relies on javascript for proper operation.  Please consider enabling javascript for the full experience.
+          </p>
+        </noscript>
+        <p class="text">
+          In mathematics, a <defn>tessellation</defn> of a flat surface is the tiling of a plane using one or more geometric shapes, called tiles, with no overlaps and no gaps. The most familiar tilings (e.g., by squares or triangles) are <defn>periodic</defn>: a perfect copy of the tiling can be obtained by translating all of the tiles by a fixed distance in a given direction.
+        </p>
+        <figure class="figure one">
+          <figcaption class="figure-title">
+            Fig. 1: A regular tessellation with hexagons
+          </figcaption>
+          <canvas width="600px" height="200px"></canvas>
+        </figure>
+        <p class="text">
+          If a tiling has no periods, it is said to be <defn>non-periodic</defn>, and it's said to be <defn>aperiodic</defn> if every tiling of the plane with the tiles is non-periodic.  <defn>Penrose tilings</defn> use two different quadrilateral prototiles which cannot tessellate periodically.
+        </p>
+        <figure class="figure two">
+          <figcaption class="figure-title">
+            Fig. 2: An aperiodic tessellation with Penrose tiles
+          </figcaption>
+          <canvas width="600px" height="200px"></canvas>
+        </figure>
+        <p class="text">
+          In 1980, N. G. de Bruijn <a href="http://www.math.brown.edu/~res/M272/pentagrid.pdf">showed</a> that Penrose tilings can be seen as the projection of a two-dimensional plane in five-dimensional space. In the figure below, you can click and drag to translate the viewport along the plane.
+        </p>
+        <figure class="figure three">
+          <figcaption class="figure-title">
+            Fig. 3: Interactive de Bruijn projection explorer
+          </figcaption>
+          <canvas width="600px" height="600px"></canvas>
+        </figure>
+      </section>
+      <p class="text">
+        Additional resources:
+      </p>
+      <ul>
+        <li>
+          <p class="text">
+            de Bruijn's
+            <a href="//www.math.brown.edu/~res/M272/pentagrid.pdf">
+              <i>Algebraic theory of Penrose's non-periodic tilings of the plane</i>
+            </a>
+          </p>
+        </li>
+        <li>
+          <p class="text">
+            <a href="//en.wikipedia.org/wiki/Euclidean_tilings_by_convex_regular_polygons">
+              A list of Euclidean tilings by convex regular polygons
+            </a>
+          </p>
+        </li>
+        <li>
+          <p class="text">
+            Penrose tiling
+            <a href="//en.wikipedia.org/wiki/Penrose_tiling">
+              (wikipedia)
+            </a>
+          </p>
+        </li>
+        <li>
+          <p class="text">
+            Aperiodic tiling
+            <a href="//en.wikipedia.org/wiki/Aperiodic_tiling">
+              (wikipedia)
+            </a>
+          </p>
+        </li>
+        <li>
+          <p class="text">
+            Roger Penrose
+            <a href="//en.wikipedia.org/wiki/Roger_Penrose">
+              (wikipedia)
+            </a>
+          </p>
+        </li>
+        <li>
+          <p class="text">
+            Nicolaas Govert de Bruijn
+            <a href="//en.wikipedia.org/wiki/Nicolaas_Govert_de_Bruijn">
+              (wikipedia)
+            </a>
+          </p>
+        </li>
+        <li>
+          <p class="text">
+            Martin Gardner's
+            <a href="//www.maa.org/sites/default/files/pdf/pubs/focus/Gardner_PenroseTilings1-1977.pdf">
+              summary of Penrose tiles
+            </a>
+          </p>
+        </li>
+        <li>
+          <p class="text">
+            Jason B Healy's
+            <a href="//dept.cs.williams.edu/~bailey/Hy00.pdf">
+              <i>Automatic Generation of Penrose Empires</i>
+            </a>
+          </p>
+        </li>
+        <li>
+          <p class="text">
+            Jeff Preshing's Penrose tiling
+            <a href="//preshing.com/20110831/penrose-tiling-explained/">
+              implementation in Python
+            </a>
+          </p>
+        </li>
+        <li>
+          <p class="text">
+            Penrose tiling
+            <a href="//rosettacode.org/wiki/Penrose_tiling">
+              implementations in Go-lang and Java
+            </a>
+          </p>
+        </li>
+        <li>
+          <p class="text">
+            <a href="//github.com/Spockuto">Venkkatesh Sekar</a> programed a
+            <a href="//vsekar.me/Penrose/">Penrose tiling applet</a> from this
+            <a href="//github.com/Spockuto/Penrose">
+              repository
+            </a>
+          </p>
+        </li>
+        <li>
+          <p class="text">
+            <a href="//github.com/gglouser">Grant Glouser</a> programed a
+            <a href="//gglouser.github.io/cut-and-project-tiling/">de Bruijn projection applet</a> from this
+            <a href="//github.com/gglouser/cut-and-project-tiling">
+              repository
+            </a>
+          </p>
+        </li>
+        <li>
+          <p class="text">
+            <a href="//www.geom.uiuc.edu/apps/quasitiler/about.html">
+              Eugenio Durand's Quasitiler applet
+            </a>
+          </p>
+        </li>
+        <li>
+          <p class="text">
+            <a href="//upload.wikimedia.org/wikipedia/commons/c/c0/Penrose_LI_classes.svg">Large image</a>
+            of tilings in different local isomorphism classes obtained by the cut and project method
+          </p>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script type="module" src="/public/javascripts/main.js"></script>
+</html>
